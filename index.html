@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PINTURAS S&C</title>
+    
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo"><h1>Pinturas S&C</h1></div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#">Productos</a></li>
+                <li><a href="#">Colores</a></li>
+                <li><a href="#">Prompts SC</a></li>
+            </ul>
+            <button class="menu-toggle" id="menuToggle">☰</button>
+        </nav>
+        
+        <div class="video-container">
+            <video autoplay loop muted playsinline class="bg-video">
+                <source src="img/NAVVID.mp4" type="video/mp4">
+            </video>
+            <div class="video-overlay">
+                <h1>Tu mundo de colores</h1>
+            </div>
+        </div>
+    </header>
+    
+    <main> <!--TARJETA DE PROPIEDADES-->
+        <section class="cards-container">
+    
+            <!-- Tarjeta 1: Durabilidad -->
+            <article class="infocard">
+                <div class="card-image-wrapper">
+                    <img src="img/propiedad_durabilidad2.jpg" alt="Durabilidad" class="card-image">
+                </div>
+                <div class="card-content">
+                    <h2>Durabilidad</h2>
+                    <div class="card-footer">
+                    </div>
+                    <p>Alta resistencia por más tiempo</p>
+                </div>
+            </article>
+
+            <!-- Tarjeta 2: Variedad 
+            <article class="infocard">
+                <div class="card-image-wrapper">
+                    <img src="img/propiedad_variedad.jpg" alt="Variedad" class="card-image">
+                </div>
+                <div class="card-content">
+                    <h2>Variedad</h2>
+                    <div class="card-footer">
+                        </div>
+                        <p>300 colores diferentes</p>
+                </div>
+            </article> -->
+
+            <!-- Tarjeta 3: Cobertura -->
+            <article class="infocard">
+                <div class="card-image-wrapper">
+                    <img src="img/propiedad_cobertura.jpg" alt="Cobertura" class="card-image">
+                </div>
+                <div class="card-content">
+                    <h2>Cobertura</h2>
+                    <div class="card-footer">
+                    </div>
+                    <p></p>
+                </div>
+            </article>
+
+            <!-- Tarjeta 4: Lavable -->
+            <article class="infocard">
+                <div class="card-image-wrapper">
+                    <img src="img/propiedad_lavable.jpg" alt="Cobertura" class="card-image">
+                </div>
+                <div class="card-content">
+                    <h2>Lavable</h2>
+                    <div class="card-footer">
+                    </div>
+                    <p></p>
+                </div>
+            </article>
+
+            <!-- Tarjeta 5: Antihongo 
+            <article class="infocard">
+                <div class="card-image-wrapper">
+                    <img src="img/propiedad_antihongo.jpg" alt="Cobertura" class="card-image">
+                </div>
+                <div class="card-content">
+                    <h2>Antihongo</h2>
+                    <div class="card-footer">
+                    </div>
+                    <p></p>
+                </div>
+            </article> -->
+
+            <!-- Tarjeta 6: Bajo Olor -->
+            <article class="infocard">
+                <div class="card-image-wrapper">
+                    <img src="img/propiedad_bajoolor.jpg" alt="Cobertura" class="card-image">
+                </div>
+                <div class="card-content">
+                    <h2>Bajo olor</h2>
+                    <div class="card-footer">
+                    </div>
+                    <p></p>
+                </div>
+            </article>
+
+        </section>
+    </main>
+
+    <footer class="main-footer">
+    <div class="footer-container">
+    
+    <!-- Columna 1: Sobre Nosotros / Marca -->
+    <div class="footer-column biography">
+      <h3 class="footer-title">Pinturas S&C</h3>
+      <p>Ayudamos a construir tu sueño.</p>
+    </div>
+
+    <!-- Columna 2: Enlaces Rápidos -->
+    <div class="footer-column links">
+      <h3 class="footer-title">Navegación</h3>
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#productos">Productos</a></li>
+        <li><a href="#propiedades">Propiedades</a></li>
+        <li><a href="#colores">Colores</a></li>
+        <li><a href="#promt">Promt</a></li>
+      </ul>
+    </div>
+
+    <!-- Columna 3: Contacto -->
+    <div class="footer-column contact">
+      <h3 class="footer-title">Contacto</h3>
+      <p>📍 Turmero - Edo. Aragua - Venezuela</p>
+      <p>📞 +58 412-7760718</p>
+      <p>✉️ pinturass&c@gmail.com</p>
+    </div>
+
+<!-- Contenedor del Mapa de Google 
+<div class="footer-map-container">
+    <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d125639.18897874147!2d-67.57386785582439!3d10.243456818184614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e802155c56a4ee5%3A0xb22e37eb965185f2!2sTurmero%2C%20Aragua%2C%20Venezuela!5e0!3m2!1ses!2sar!4v1791411912428!5m2!1ses!2sar" 
+        width="100%" 
+        height="150" 
+        style="border:0;" 
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+</div>
+</div> -->
+
+<!-- Barra de Créditos / Legal -->
+  <div class="footer-bottom">
+    <p>&copy; 2026 MiSitioWeb. Todos los derechos reservados.</p>
+    <div class="legal-links">
+      <a href="#privacidad">Política de Privacidad</a> | 
+      <a href="#terminos">Términos de Servicio</a>
+    </div>
+  </div>
+</footer>
+
+
+</body>
+</html>

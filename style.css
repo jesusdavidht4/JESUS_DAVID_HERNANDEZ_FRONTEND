@@ -1,0 +1,312 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+/*NAVBAR*/
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #d1d6d2ea;
+  color: rgba(26, 6, 95, 0.919);
+  padding: 1rem;
+}
+
+.logo h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: rgba(26, 6, 95, 0.919);
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+/* Estilos base para los enlaces */
+.nav-links a {
+  color: rgba(26, 6, 95, 0.919);
+  text-decoration: none;
+  font-weight: 400;
+  position: relative; 
+  padding-bottom: 5px;
+  transition: color 0.3s ease; 
+}
+
+/* 1. Color de las letras al pasar el cursor */
+.nav-links a:hover {
+  color: #2366b4; 
+}
+
+/* 2. Creación de la barrita debajo */
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3px; 
+  background-color: #2366b4; 
+  transform: scaleX(0); 
+  transform-origin: bottom right;
+  transition: transform 0.3s ease-out; 
+}
+
+/* 3. Efecto de expansión al pasar el cursor*/
+.nav-links a:hover::after {
+  transform: scaleX(1); 
+  transform-origin: bottom left;
+}
+
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: rgba(26, 6, 95, 0.919); 
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/* Estilo responsivo para móviles */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background-color: #d1d6d2;
+    padding: 1rem;
+  }
+  
+  .nav-links.active {
+    display: flex;
+  }
+  
+  .menu-toggle {
+    display: block;
+  }
+}
+
+/* Contenedor principal del video */
+.video-container {
+  position: relative;
+  width: 100%;
+  height: 60vh;
+  overflow: hidden;
+}
+
+/* Estilos para el video de fondo */
+.bg-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Capa oscura y contenedor del texto encima del video */
+.video-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.video-overlay h1 {
+  color: white;
+  font-size: 3.0rem;
+  font-weight: 600; 
+  text-align: center;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+/*TARJETAS DE PROPIEDADES*/
+
+/* Contenedor de la sección completa */
+.cards-container {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 4rem 2rem;
+  background-color: #ffffff;
+  flex-wrap: wrap;
+}
+
+/* Estilo exacto de la tarjeta (infocard) */
+.infocard {
+  background-color: #ffffff;
+  border-radius: 6px;
+  width: 280px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+  border: 1px solid #f0f0f0;
+}
+
+/* Contenedor de la imagen */
+.card-image-wrapper {
+  width: 100%;
+  height: 180px;
+  overflow: hidden;
+}
+
+/* Propiedades de la foto */
+.card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Contenedor de la mitad inferior (Texto) */
+.card-content {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
+  position: relative;
+  min-height: 100px;
+}
+
+/* Título alineado a la izquierda */
+.infocard h2 {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #333333;
+  text-align: left;
+  line-height: 1.4;
+}
+
+/* Contenedor del botón inferior derecho */
+.card-footer {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: auto;
+}
+
+/* Propiedades de la foto */
+.card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; 
+  background-color: #f7f7f7; 
+}
+
+
+/* Estilos Generales del Footer */
+.main-footer {
+  background-color: #1a1a1a;
+  color: #ffffff;
+  padding: 40px 20px 20px 20px;
+  }
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+/* Columnas */
+.footer-column {
+  flex: 1;
+  min-width: 250px;
+}
+
+.footer-title {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: #00adb5;
+  position: relative;
+}
+
+.footer-column p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #ccc;
+}
+
+/* Listas de enlaces */
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+  color: #ccc;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-column ul li a:hover {
+  color: #00adb5;
+}
+
+/* FOOTER */
+.footer-bottom {
+  max-width: 1200px;
+  margin: 40px auto 0 auto; 
+  border-top: 1px solid #333;
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  font-size: 0.85rem;
+  color: #aaa;
+  width: 100%;
+}
+
+.copyright {
+  margin: 0;
+  text-align: left;
+}
+
+.legal-links {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.legal-links a {
+  color: #aaa;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.legal-links a:hover {
+  color: #ffffff;
+}
+
+.separator {
+  color: #444;
+}
+
+/* Optimización Responsive */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+  }
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+  }
+}
